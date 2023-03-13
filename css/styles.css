@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300 &family=Lobster&family=Poppins&family=Shadows+Into+Light&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+}
+
+header nav {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    height: 6vh;
+    background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+    display: flex;
+    align-items: center;
+    padding: 0 1.4vw;
+}
+
+nav img {
+    width: 8vw;
+    float: left;
+    margin-left: -8vw;
+    margin-right: -3vw;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    font-size: 1.2vw;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(black, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.fa {
+    color: black;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 3vw;
+    align-items: center;
+}
+
+.about-me ul li a i {
+    margin: 1vh 0;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-heart {
+    background: -webkit-linear-gradient(black, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-me ul li {
+    list-style-type: none;
+}
+
+#its-me {
+    font-size: 2vw;
+    background: -webkit-linear-gradient(purple, black, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#front-end {
+    font-size: 2vw;
+    background: -webkit-linear-gradient(purple, black, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name {
+    font-size: 6vw;
+    background: -webkit-linear-gradient(black, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.myPic {
+    width: 20vw;
+    object-fit: cover;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 3.5vw;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width: 40vw;
+    margin: 10vh auto 0 auto;
+    text-align: center;
+    height: 0px;
+    overflow: visible;
+    height: none;
+}
+
+hr::after {
+    content: '</>';
+    padding: 0 4px;
+    background-color: #cda7de;
+    position: relative;
+    top: -17.5px;
+    font-size: 2rem;
+    color: purple;
+}
+
+.projects {
+    font-size: 4vw;
+    margin: 5vw;
+    text-align: center;
+}
+
+.project-name {
+    font-size: 3vw;
+    margin: 3vw;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 2vw;
+    text-align: justify;
+    margin: 0 6vw 6vw 6vw;
+}
+
+.link-to-source {
+    font-size: 2vw;
+    text-align: justify;
+    margin: 0 6vw 6vw 6vw;
+}
+
+.link-to-source a {
+    color: black;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 2.5vw;
+    }
+    nav img {
+        width: 16vw;
+    }
+    .introduction {
+        margin-left: 6vw;
+    }
+    #its-me {
+        font-size: 5vw;
+    }
+    .name {
+        font-size: 10vw;
+    }
+    #front-end {
+        font-size: 5vw;
+    }
+    .myPic {
+        width: 35vw;
+    }
+    .project-description {
+        font-size: 3vw;
+    }
+    .link-to-source {
+        font-size: 3vw;
+    }
+    .projects {
+        font-size: 6vw;
+    }
+    .project-name {
+        font-size: 4vw;
+    }
+    .links ul {
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 420px) {
+    nav ul {
+        font-size: 3vw;
+    }
+}
