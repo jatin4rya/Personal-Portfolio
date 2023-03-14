@@ -11,7 +11,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+    /* background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%); */
+    background: linear-gradient(to right, navajowhite, ghostwhite, white);
 }
 
 header nav {
@@ -20,7 +21,7 @@ header nav {
     z-index: 999;
     top: 0;
     height: 6vh;
-    background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+    background: linear-gradient(to right, navajowhite, white);
     box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
     display: flex;
     align-items: center;
@@ -67,8 +68,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0 3vw;
+    padding: 3vw;
     align-items: center;
+    background: linear-gradient(to right, navajowhite, white);
+    margin: 0 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .about-me ul li a i {
@@ -137,17 +142,31 @@ hr {
 hr::after {
     content: '</>';
     padding: 0 4px;
-    background-color: #cda7de;
+    border-radius: 30%;
+    background: white;
     position: relative;
     top: -17.5px;
     font-size: 2rem;
-    color: purple;
+    color: black;
+}
+
+.pro-box {
+    padding: .5rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, navajowhite, white);
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .projects {
     font-size: 4vw;
-    margin: 5vw;
+    margin: 5vw auto;
     text-align: center;
+    background: linear-gradient(to right, navajowhite, white);
+    width: 30vw;
+    padding: .5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .project-name {
@@ -171,6 +190,11 @@ hr::after {
 .link-to-source a {
     color: black;
     font-weight: 400;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 768px) {
